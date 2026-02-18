@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neo File Uploader</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="upload-card">
+
+    <div class="title">
+      <h2>Neo File Upload</h2>
+      <p>Upload your documents easily & securely</p>
+    </div>
+
+    <div class="drop-area" id="drop-area">
+      <div class="icon">☁️</div>
+      <p>Drag & Drop Files</p>
+      <span>or</span>
+      <button id="browseBtn">Choose Files</button>
+      <input type="file" id="fileInput" multiple hidden>
+    </div>
+
+    <div class="file-list" id="fileList"></div>
+
+    <div class="actions">
+      <button id="clearBtn" class="clear">Clear</button>
+      <button id="uploadBtn" class="upload">Upload</button>
+    </div>
+
+    <div class="progress-container" id="progressContainer">
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+    </div>
+
+    <div class="success" id="successMsg">✔ Files Uploaded Successfully</div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
